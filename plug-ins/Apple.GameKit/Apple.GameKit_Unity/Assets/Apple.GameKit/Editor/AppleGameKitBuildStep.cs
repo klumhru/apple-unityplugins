@@ -28,6 +28,10 @@ namespace Apple.GameKit.Editor
             {
                 entitlements.root.SetBoolean("com.apple.developer.game-center", true);
             }
+            if(buildTarget == BuildTarget.iOS)
+            {
+                entitlements.root.SetBoolean("com.apple.developer.game-center", true);
+            }
         }
 
         public override void OnProcessFrameworks(AppleBuildProfile _, BuildTarget buildTarget, string pathToBuiltTarget, PBXProject pbxProject)
